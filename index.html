@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipriani's Pizza</title>
+    <link rel="stylesheet" href="./assets/fonts.css">
+    <link rel="stylesheet" href="./assets/index.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="logo">
+            <img src="./public/logo.svg" alt="Cipriani's Pizza">
+        </div>
+        <div class="nav__links">
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div class="hero">
+            <div class="hero__image"></div>
+            <div class="hero__content">
+                <h1>Classic & Delicious</h1>
+                <p>A traditional but exquisite pizza right in front of your eyes</p>
+                <div>
+                    <button class="btn">Take A Ride</button>
+                </div>
+            </div>
+        </div>
+        <div class="delivery-section">
+            <div class="delivery-section__content">
+                <img src="/public/pizza_delivery.webp" alt="Pizza on a table">
+                <h2>You want it, you got it.</h2>
+                <p>We will deliver your order in only 25 minutes, Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Laboriosam deserunt possimus</p>
+            </div>
+        </div>
+        </div>
+        <div class="ingredients-section">
+            <div class="ingredients-section__content">
+                <div class="ingredients-section__ingredients">
+                    <img src="/public/fresh_ingredient.webp" alt="A fresh and green ingredient">
+                    <img src="/public/fresh_ingredient_2.webp" alt="A fresh and creamy ingredient">
+                </div>
+                <h2>Made to be fresh</h2>
+                <p>We use the best quality of ingredients in our kitchens, what you receive is 100% Lorem ipsum dolor
+                    sit amet consectetur.</p>
+            </div>
+        </div>
+        <div class="favorite-section">
+            <div class="favorite-section__divider">
+                <h2>Pick your favorite</h2>
+                <div></div>
+            </div>
+            <div class="favorite-section__content">
+                <p>These two are the hot picks of the week, bet you want them too</p>
+            </div>
+            <div class="favorite-section__cards">
+                <div class="favorite-section__card">
+                    <div class="card__content">
+                        <figure>
+                            <img src="/public/pizza_double_tap.webp" alt="Double-Tap pizza">
+                        </figure>
+                        <h4>Double Tap</h4>
+                        <p>Crispy with Pepperoni, Ground Beef and a lot of Cheese.</p>
+                    </div>
+                </div>
+                <div class="favorite-section__card">
+                    <div class="card__content">
+                        <figure>
+                            <img src="/public/pizza_majesty_80.webp" alt="Double-Tap pizza">
+                        </figure>
+                        <h4>Majesty 80'</h4>
+                        <p>Buttery full of Cheese, Crumbled Sausage, Mushrooms & Artichokes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-section">
+            <div class="figure"></div>
+            <h2>It feels like home.</h2>
+            <a href="#" class="btn btn--secondary">LEARN ABOUT US</a>
+        </div>
+        <div class="footer">
+            <div class="footer__branding">
+                <img src="/public/logo_black.svg" alt="Cipriani's Pizza Logo">
+                <div class="footer__divider">
+                    <div>
+                        CIPRIANI'S <br> PIZZA
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="footer__links">
+                <div class="footer__links-column">
+                    <div class="footer__links-item">
+                        <img src="/public/icon_facebook.svg" alt="Facebook icon">
+                        Cipriani's Pizza
+                    </div>
+                    <div class="footer__links-item">
+                        <img src="/public/icon_twitter.svg" alt="Twitter icon">
+                        ciprianipizza
+                    </div>
+                    <div class="footer__links-item">
+                        <div class="ig-icon">IG</div>
+                        ciprianipizza
+                    </div>
+                </div>
+                <div class="footer__links-column">
+                    <div class="footer__links-item">
+                        <img src="/public/icon_phone.svg" alt="Phone icon">
+                        +1 234 567 890
+                    </div>
+                    <div class="footer__links-item">
+                        <img src="/public/icon_at.svg" alt="Email icon">
+                        support@ciprianipizza.com
+                    </div>
+                </div>
+            </div>
+            <div class="footer__credits">
+                <div class="footer__credits-content">
+                    <div class="gnz">
+                        <img src="/public/gnz.svg" alt="GNZ LOGO">
+                        GNZ
+                    </div>
+                    <p>&copy; <span id="copy-year"></span> Cipriani's Pizza. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const copyYear = document.getElementById('copy-year');
+        copyYear.innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

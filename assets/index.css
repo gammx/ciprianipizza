@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: opacity .2s ease;
+}
+
+.nav__links a:hover {
+    opacity: .6;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero__image {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-image: url(/public/pizza_table.webp);
+}
+
+.hero__image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .9));
+}
+
+.hero__content {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: -13rem;
+}
+
+.hero__content h1 {
+    font-size: 6.4rem;
+    font-family: 'TiemposFine';
+    margin-bottom: 1.5rem;
+}
+
+.hero__content p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem;
+    background-color: #fff;
+    color: black;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.btn--secondary {
+    background-color: black;
+    color: white;
+}
+
+.btn--secondary:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* FAST DELIVERY SECTION */
+
+.delivery-section {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6rem;
+}
+
+.delivery-section__content {
+    position: relative;
+    top: -5rem;
+    text-align: center;
+}
+
+.delivery-section__content img {
+    margin-bottom: 1rem;
+}
+
+.delivery-section__content h2 {
+    font-size: 6.4rem;
+    font-family: 'TiemposFine';
+    margin-bottom: 1.5rem;
+}
+
+.delivery-section__content p {
+    padding: 0 10%;
+}
+
+/* FRESH INGREDIENTS SECTION */
+
+.ingredients-section {
+    padding-bottom: 8rem;
+}
+
+.ingredients-section__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ingredients-section__ingredients {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: .6rem;
+}
+
+.ingredients-section__ingredients img:first-child {
+    position: relative;
+    z-index: 1;
+    top: -0.5rem;
+}
+
+.ingredients-section__ingredients img:last-child {
+    position: relative;
+    z-index: 1;
+    top: -6rem;
+}
+
+.ingredients-section__content h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-section__content p {
+    font-size: 1.6rem;
+    padding: 0 30%;
+}
+
+/* FAVORITE PICKS SECTION */
+.favorite-section {
+    padding: 0 10%;
+    padding-bottom: 4rem;
+}
+
+.favorite-section__divider {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.favorite-section__divider h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.favorite-section__divider div {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    flex: 1;
+}
+
+.favorite-section__cards {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 6.5rem;
+}
+
+.favorite-section__card {
+    width: 300px;
+    height: 330px;
+    border: 1px solid white;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}
+
+.favorite-section__card:hover {
+    background-color: white;
+    color: black;
+}
+
+.favorite-section__card .card__content {
+    position: relative;
+    top: -3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.favorite-section__card .card__content h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.favorite-section__card .card__content p {
+    font-size: 1.6rem;
+    padding: 0 10%;
+}
+
+.about-us-section {
+    width: 100%;
+    height: 365px;
+    background: url(/public/pizza_background.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-us-section h2 {
+    font-size: 3.2rem;
+    font-family: 'TiemposFine';
+    margin-bottom: 1.6rem;
+}
+
+.about-us-section .figure {
+    width: 100%;
+    height: 109px;
+    background: url(/public/figure_1.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    background-color: white;
+    color: black;
+    padding: 0 5%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__branding {
+    position: relative;
+    top: -4rem;
+    margin-bottom: 3.2rem
+}
+
+.footer__branding img {
+    width: 80px;
+    margin-bottom: 2.5rem;
+}
+
+.footer__divider {
+    font-size: 2.4rem;
+    letter-spacing: .05em;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer__divider div:last-child {
+    width: 400px;
+    height: 1px;
+    background-color: black;
+}
+
+.footer__links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer__links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__links-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__links-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.ig-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.footer__credits {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer__credits-content {
+    padding: 6rem 0;
+}
+
+.footer__credits-content .gnz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-family: 'Telegraf';
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.footer__credits-content img {
+    width: 24px;
+    height: 24px;
+}
