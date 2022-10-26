@@ -15,6 +15,8 @@ body {
     font-size: 1.6rem;
 }
 
+/* MOBILE FIRST -------------------------------- */
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -56,8 +58,9 @@ body {
 
 .hero__image {
     position: relative;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 225px;
+    background-size: cover;
     background-image: url(/public/pizza_table.webp);
 }
 
@@ -79,7 +82,7 @@ body {
 }
 
 .hero__content h1 {
-    font-size: 6.4rem;
+    font-size: 5rem;
     font-family: 'TiemposFine';
     margin-bottom: 1.5rem;
 }
@@ -87,6 +90,7 @@ body {
 .hero__content p {
     font-size: 1.6rem;
     margin-bottom: 3rem;
+    padding: 0 10%;
 }
 
 .btn {
@@ -136,17 +140,18 @@ body {
 }
 
 .delivery-section__content img {
+    width: 180px;
     margin-bottom: 1rem;
 }
 
 .delivery-section__content h2 {
-    font-size: 6.4rem;
+    font-size: 4.2rem;
     font-family: 'TiemposFine';
     margin-bottom: 1.5rem;
 }
 
 .delivery-section__content p {
-    padding: 0 10%;
+    padding: 0 15%;
 }
 
 /* FRESH INGREDIENTS SECTION */
@@ -161,6 +166,10 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.ingredients-section__content p {
+    padding: 0 15%;
 }
 
 .ingredients-section__ingredients {
@@ -191,7 +200,7 @@ body {
 
 .ingredients-section__content p {
     font-size: 1.6rem;
-    padding: 0 30%;
+    padding: 0 15%;
 }
 
 /* FAVORITE PICKS SECTION */
@@ -226,11 +235,12 @@ body {
     justify-content: center;
     gap: 6rem;
     margin-top: 6.5rem;
+    flex-direction: column;
 }
 
 .favorite-section__card {
-    width: 300px;
-    height: 330px;
+    width: 100%;
+    height: auto;
     border: 1px solid white;
     border-radius: 3rem;
     display: flex;
@@ -251,8 +261,9 @@ body {
     top: -3rem;
     text-align: center;
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+    flex-direction: column;
+    width: 100%;
 }
 
 .favorite-section__card .card__content h4 {
@@ -260,11 +271,12 @@ body {
     font-weight: 900;
     letter-spacing: .1em;
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 .favorite-section__card .card__content p {
     font-size: 1.6rem;
-    padding: 0 10%;
+    padding: 0 10%;;
 }
 
 .about-us-section {
@@ -296,7 +308,6 @@ body {
     background-color: white;
     color: black;
     padding: 0 5%;
-    height: 550px;
     display: flex;
     flex-direction: column;
 }
@@ -308,7 +319,7 @@ body {
 }
 
 .footer__branding img {
-    width: 80px;
+    width: 64px;
     margin-bottom: 2.5rem;
 }
 
@@ -330,7 +341,8 @@ body {
 
 .footer__links {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
     margin-bottom: 2.5rem;
 }
 
@@ -386,4 +398,106 @@ body {
 .footer__credits-content img {
     width: 24px;
     height: 24px;
+}
+
+/* TABLET SCREENS -------------------------------- */
+@media (min-width: 768px) {
+    .hero__image {
+        width: 300px;
+        height: 225px;
+        background-size: cover;
+    }
+    .hero__image::after {
+        width: 300px;
+        height: 225px;
+    }
+    .hero__content h1 {
+        font-size: 5rem;
+    }
+    .hero__content p {
+        padding: 0 10%;
+    }
+    .delivery-section__content img {
+        width: 180px;
+    }
+    .delivery-section__content h2 {
+        font-size: 5rem;
+    }
+    .delivery-section__content p {
+        padding: 0 15%;
+    }
+    .ingredients-section__content p {
+        padding: 0 20%;
+    }
+    .favorite-section__cards {
+        flex-direction: column;
+    }
+    .favorite-section__card {
+        width: 100%;
+        height: auto;
+    }
+    .favorite-section__card .card__content {
+        flex-direction: row;
+        top: 0;
+        left: -3rem;
+        text-align: left;
+        padding: 3rem 0;
+        display: flex;
+        width: 100%;
+    }
+    .favorite-section__card .card__content p {
+        padding: 0;
+    }
+    .footer__links {
+        flex-direction: row;
+        gap: 4rem;
+    }
+    .footer__branding img {
+        width: 80px;
+    }
+}
+
+/* DESKTOP SCREENS -------------------------------- */
+
+@media (min-width: 1024px) {
+    .hero__image {
+        width: 400px;
+        height: 300px;
+    }
+    .hero__image::after {
+        width: 100%;
+        height: 100%;
+    }
+    .hero__content h1 {
+        font-size: 6.4rem;
+    }
+    .hero__content p {
+        padding: 0;
+    }
+    .delivery-section__content img {
+        width: auto;
+    }
+    .delivery-section__content h2 {
+        font-size: 6.4rem;
+    }
+    .delivery-section__content p {
+        padding: 0 10%;
+    }
+    .ingredients-section__content p {
+        padding: 0 30%;
+    }
+    .favorite-section__cards {
+        flex-direction: row;
+    }
+    .favorite-section__card {
+        width: 300px;
+        height: 300px;
+    }
+    .favorite-section__card .card__content {
+        flex-direction: column;
+        left: 0;
+        top: -3rem;
+        text-align: center;
+        padding: 0;
+    }
 }
