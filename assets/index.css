@@ -372,6 +372,16 @@ body {
     gap: 1rem;
 }
 
+.footer__links-item a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+}
+
+.footer__links-item a:hover {
+    text-decoration: underline;
+}
+
 .footer__links-item img {
     width: 24px;
     height: 24px;
