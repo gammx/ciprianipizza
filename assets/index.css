@@ -253,13 +253,13 @@ body {
     gap: .6rem;
 }
 
-.ingredients-section__ingredients img:first-child {
+.ingredients-section__ingredients picture:first-child {
     position: relative;
     z-index: 1;
     top: -0.5rem;
 }
 
-.ingredients-section__ingredients img:last-child {
+.ingredients-section__ingredients picture:last-child {
     position: relative;
     z-index: 1;
     top: -6rem;
@@ -376,7 +376,7 @@ body {
     bottom: 0;
 }
 
-.about-us-section img {
+.about-us-section picture {
     position: absolute;
     top: 0;
     left: 0;

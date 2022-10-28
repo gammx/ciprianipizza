@@ -55,16 +55,23 @@
                         <img src="./public/pizza_delivery.webp" alt="Pizza on a table" id="delivering_pizza">
                     </picture>
                     <h2>You want it, you got it.</h2>
-                    <p>We will deliver your order in only 25 minutes, Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Laboriosam deserunt possimus</p>
+                    <p>We will deliver your order in only 25 minutes, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam deserunt possimus</p>
                 </div>
             </div>
             </div>
             <div class="ingredients-section">
                 <div class="ingredients-section__content">
                     <div class="ingredients-section__ingredients">
-                        <img src="./public/fresh_ingredient.webp" alt="A fresh and green ingredient" id="fresh_ingredient_1">
-                        <img src="./public/fresh_ingredient_2.webp" alt="A fresh and creamy ingredient" id="fresh_ingredient_2">
+                        <picture id="fresh_ingredient_1">
+                            <source srcset="./public/fresh_ingredient.webp" type="image/webp">
+                            <source srcset="./public/png/fresh_ingredient.png" type="image/png">
+                            <img src="./public/fresh_ingredient.webp" alt="A fresh and green ingredient">
+                        </picture>
+                        <picture id="fresh_ingredient_2">
+                            <source srcset="./public/fresh_ingredient_2.webp" type="image/webp">
+                            <source srcset="./public/png/fresh_ingredient_2.png" type="image/png">
+                            <img src="./public/fresh_ingredient_2.webp" alt="A fresh and creamy ingredient">
+                        </picture>
                     </div>
                     <h2>Made to be fresh</h2>
                     <p>We use the best quality of ingredients in our kitchens, what you receive is 100% Lorem ipsum dolor
@@ -82,9 +89,11 @@
                 <div class="favorite-section__cards">
                     <div class="favorite-section__card">
                         <div class="card__content">
-                            <figure>
+                            <picture>
+                                <source srcset="./public/pizza_double_tap.webp" type="image/webp">
+                                <source srcset="./public/png/pizza_double_tap.png" type="image/png">
                                 <img src="./public/pizza_double_tap.webp" alt="Double-Tap pizza">
-                            </figure>
+                            </picture>
                             <div>
                                 <h3>Double Tap</h3>
                                 <p>Crispy with Pepperoni, Ground Beef and a lot of Cheese.</p>
@@ -93,9 +102,11 @@
                     </div>
                     <div class="favorite-section__card">
                         <div class="card__content">
-                            <figure>
+                            <picture>
+                                <source srcset="./public/pizza_majesty_80.webp" type="image/webp">
+                                <source srcset="./public/png/pizza_majesty_80.png" type="image/png">
                                 <img src="./public/pizza_majesty_80.webp" alt="Double-Tap pizza">
-                            </figure>
+                            </picture>
                             <div>
                                 <h3>Majesty 80'</h3>
                                 <p>Buttery full of Cheese, Crumbled Sausage, Mushrooms & Artichokes.</p>
@@ -105,7 +116,11 @@
                 </div>
             </div>
             <div class="about-us-section" id="about-us">
-                <img src="./public/pizza_bg.webp" alt="A pepperoni pizza full of cheese" id="pizza_bg">
+                <picture id="pizza_bg">
+                    <source srcset="./public/pizza_bg.webp" type="image/webp">
+                    <source srcset="./public/png/pizza_bg.png" type="image/png">
+                    <img src="./public/pizza_bg.webp" alt="A pepperoni pizza full of cheese">
+                </picture>
                 <div class="figure"></div>
                 <div>
                     <h2>It feels like home.</h2>
