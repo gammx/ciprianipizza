@@ -1,14 +1,6 @@
 /** Update copyright year automatically */
-const copyYear = document.getElementById('copy-year')
-copyYear.innerHTML = new Date().getFullYear()
-
-/** Listen for the button at the top which scrolls the page to the favorite-picks section */
-document.getElementById("take-ride").addEventListener("click", function () {
-    document.getElementById("favorite-picks").scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-    });
-})
+const copyYear = document.getElementById('copy-year');
+copyYear.innerHTML = new Date().getFullYear();
 
 /**
  * It creates a parallax effect on the requested element

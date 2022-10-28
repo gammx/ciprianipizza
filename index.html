@@ -7,7 +7,7 @@
         <title>Cipriani's Pizza</title>
         <link rel="stylesheet" href="./assets/fonts.css">
         <link rel="stylesheet" href="./assets/index.css">
-
+        <script src="./clickEvents.js"></script>
     </head>
 
     <body>
@@ -16,8 +16,20 @@
                 <img src="./public/logo.svg" alt="Cipriani's Pizza">
             </div>
             <div class="nav__links">
-                <a href="">About Us</a>
-                <a href="">Contact</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('about-us')">About Us</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('contact')">Contact</a>
+            </div>
+            <div class="mobile-menu__trigger" role="button" onclick="openMobileMenu()">
+                <img src="./public/icon_menu-outline.svg" alt="Menu">
+            </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu__close" role="button" onclick="closeMobileMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g></svg>
+                </div>
+                <div class="mobile-menu__links">
+                    <a href="javascript:void(0)" onclick="scrollToAboutUsSection()">About Us</a>
+                    <a href="javascript:void(0)" onclick="scrollToContactSection()">Contact</a>
+                </div>
             </div>
         </nav>
         <main>
@@ -27,7 +39,7 @@
                     <h1>Classic & Delicious</h1>
                     <p>A traditional but exquisite pizza right in front of your eyes</p>
                     <div>
-                        <button class="btn" id="take-ride">Take A Ride</button>
+                        <button class="btn" onclick="scrollToSection('favorite-picks')">Take A Ride</button>
                     </div>
                 </div>
             </div>
@@ -84,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-us-section">
+            <div class="about-us-section" id="about-us">
                 <img src="/public/pizza_bg.webp" alt="A pepperoni pizza full of cheese" id="pizza_bg">
                 <div class="figure"></div>
                 <div>
@@ -92,7 +104,7 @@
                     <a href="#" class="btn btn--secondary">LEARN ABOUT US</a>
                 </div>
             </div>
-            <div class="footer">
+            <div class="footer" id="contact">
                 <div class="footer__branding">
                     <img src="/public/logo_black.svg" alt="Cipriani's Pizza Logo">
                     <div class="footer__divider">
