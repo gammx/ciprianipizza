@@ -481,7 +481,7 @@ body {
     padding: 6rem 0;
 }
 
-.footer__credits-content .gnz {
+.footer__credits-content .gammx {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,6 +490,15 @@ body {
     font-family: 'Telegraf';
     font-weight: 500;
     margin-bottom: 2rem;
+}
+
+.footer__credits-content .gammx a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__credits-content .gammx a:hover {
+    text-decoration: underline;
 }
 
 .footer__credits-content img {
