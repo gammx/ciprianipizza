@@ -145,6 +145,10 @@ body {
     cursor: pointer;
 }
 
+.mobile-menu__links button {
+    margin-left: 0;
+}
+
 .nav__links button:hover,
 .mobile-menu__links button:hover {
     opacity: .6;
